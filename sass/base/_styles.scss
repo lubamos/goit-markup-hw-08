@@ -1,0 +1,15 @@
+ul,
+h1,
+h2,
+h3,
+p {
+  @extend %zero;
+}
+
+.container {
+  @extend %container;
+}
+
+// .foot {
+//   @extend %foot;
+// }

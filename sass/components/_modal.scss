@@ -1,0 +1,47 @@
+.modal {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  min-height: 581px;
+  min-width: 528px;
+  background-color: var(--body-background-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.modal-button {
+  position: absolute;
+  align-items: center;
+  right: 8px;
+  top: 8px;
+  padding: 0;
+  margin: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-image: url(../images/close_modal.svg);
+  background-origin: border-box;
+
+  &:hover,
+  &:focus {
+    position: absolute;
+    align-items: center;
+    right: 8px;
+    top: 8px;
+    padding: 0;
+    margin: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url(../images/Vector_close.svg);
+    background-color: var(--body-background-color);
+    background-origin: border-box;
+  }
+}

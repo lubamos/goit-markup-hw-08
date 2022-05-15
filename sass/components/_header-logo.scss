@@ -1,0 +1,21 @@
+.header-logo {
+  text-decoration: none;
+  color: $black;
+  font-family: raleway, sans-serif;
+  font-size: 28px;
+  line-height: 1.19;
+
+  transition: $transitionColor;
+}
+.header-logo__web {
+  color: $logoColor;
+  margin-right: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.header-logo {
+  &:hover,
+  &:focus {
+    color: $hoverColor;
+  }
+}

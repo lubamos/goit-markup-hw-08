@@ -9,11 +9,22 @@
   &__icon-cross {
     display: none;
   }
-  &is-open__icon-cross {
-    display: block;
-  }
+  // &.is-open__icon-cross {
+  //   display: block;
+  // }
+
+  // &.is-open__icon-menu {
+  //   display: none;
+  // }
 
   @media screen and (min-width: 768px) {
     display: none;
   }
+}
+.is-open .menu-button__icon-cross {
+  display: block;
+}
+
+.is-open .menu-button__icon-menu {
+  display: none;
 }

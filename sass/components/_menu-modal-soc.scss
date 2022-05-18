@@ -1,0 +1,29 @@
+.menu-modal-soc {
+  display: flex;
+  text-align: center;
+
+  margin-left: 40px;
+
+  list-style: none;
+  text-decoration: none;
+
+  &__item {
+    margin-right: 10px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+
+    letter-spacing: 0.02em;
+
+    color: $hoverColor;
+  }
+  &__line {
+    margin: 0;
+    width: 22px;
+    height: 0px;
+    border: 1px solid $menuSocLine;
+    transform: rotate(90deg);
+  }
+}

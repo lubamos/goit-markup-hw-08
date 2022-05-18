@@ -8,8 +8,6 @@
   text-decoration: none;
 
   &__item {
-    margin-right: 10px;
-
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -19,11 +17,17 @@
 
     color: $hoverColor;
   }
-  &__line {
-    margin: 0;
-    width: 22px;
-    height: 0px;
+  &__item::after {
+    content: "";
+    background-image: url(/images/smartfon.svg/Line.svg);
+
+    margin: 0 10px;
+    width: 1px;
+    height: 22px;
+
     border: 1px solid $menuSocLine;
-    transform: rotate(90deg);
+  }
+  &__item--hidden::after {
+    display: none;
   }
 }

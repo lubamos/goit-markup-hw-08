@@ -57,6 +57,21 @@ p {
   }
 }
 
+.box {
+  width: 480px;
+  height: 320px;
+  background-image: url("photo.png");
+  background-size: 480px 320px;
+}
+
+/* Redefine the path to the 2x image
+    if the screen density is at least 2  */
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .box {
+    background-image: url("photo@2x.png");
+  }
+}
+
 body {
   background-color: var(--body-background-color);
   color: var(--primary-text-color);
@@ -246,7 +261,6 @@ body {
 }
 
 .menu-modal-soc__item {
-  margin-right: 10px;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -255,13 +269,17 @@ body {
   color: #2196f3;
 }
 
-.menu-modal-soc__line {
-  margin: 0;
-  width: 22px;
-  height: 0px;
+.menu-modal-soc__item::after {
+  content: "";
+  background-image: url(/images/smartfon.svg/Line.svg);
+  margin: 0 10px;
+  width: 1px;
+  height: 22px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+}
+
+.menu-modal-soc__item--hidden::after {
+  display: none;
 }
 
 .hero {

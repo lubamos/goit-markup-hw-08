@@ -6,3 +6,19 @@
 //     width: 660px;
 //   }
 // }
+.box {
+  width: 480px;
+  height: 320px;
+  background-image: url("photo.png");
+  background-size: 480px 320px;
+}
+
+/* Redefine the path to the 2x image
+    if the screen density is at least 2  */
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .box {
+    background-image: url("photo@2x.png");
+  }
+}

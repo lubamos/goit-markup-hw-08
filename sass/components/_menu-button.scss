@@ -5,19 +5,27 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  fill: $text-color;
 
-  &__icon-cross {
-    display: none;
+  &:hover,
+  &:focus {
+    fill: $hoverColor;
   }
-  // &.is-open__icon-cross {
-  //   display: block;
-  // }
+}
 
-  // &.is-open__icon-menu {
-  //   display: none;
-  // }
+&__icon-cross {
+  display: none;
+}
+// &.is-open__icon-cross {
+//   display: block;
+// }
 
-  @media screen and (min-width: 768px) {
+// &.is-open__icon-menu {
+//   display: none;
+// }
+
+@media screen and (min-width: 768px) {
+  menu_button {
     display: none;
   }
 }

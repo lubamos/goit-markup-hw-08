@@ -6,25 +6,49 @@
 }
 
 .hero-overlay {
-  width: 480px;
-  height: 400px;
-  // margin-left: auto;
-  // margin-right: auto;
-  background-image: linear-gradient(
-      to right,
-      rgba(194, 198, 249, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/hero_img_480.jpg");
+  background-image: url("/images/heroimg/hero_img_480.jpg");
+  width: 100%x;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
   background-color: $overlayColor;
   background-position: center;
   background-size: cover;
+}
 
-  @media screen and (min-width: 768px) {
-    width: 768px;
+@media (min-resolution: 2dppx) {
+  .hero-overlay {
+    background-image: url("/images/heroimg/hero_img_480@2x.jpg");
   }
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
+}
+
+@media (min-wdith: 768px) {
+  .hero-overlay {
+    background-image: url("/images/heroimg/hero_img_768.jpg");
+  }
+}
+@media (min-resolution: 2dppx) {
+  .hero-overlay {
+    background-image: url("/images/heroimg/hero_img_768@2.jpg");
+  }
+}
+@media (min-wdith: 1200px) {
+  .hero-overlay {
+    background-image: linear-gradient(
+        to right,
+        rgba(194, 198, 249, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("/images/heroimg/hero_img_1200@2x.jpg");
+
+    background-color: $overlayColor;
+    background-position: center;
+    background-size: cover;
+  }
+}
+@media (min-resolution: 2dppx) {
+  .hero-overlay {
+    background-image: url("/images/heroimg/hero_img_1200@2x.jpg");
   }
 }
 

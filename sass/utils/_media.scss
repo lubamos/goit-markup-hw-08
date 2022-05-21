@@ -8,9 +8,9 @@
 // }
 .box {
   width: 480px;
-  height: 320px;
-  background-image: url("photo.png");
-  background-size: 480px 320px;
+  height: 400px;
+  background-image: url("/images/heroimg/hero_img_480.jpg");
+  background-size: 480px 400px;
 }
 
 /* Redefine the path to the 2x image
@@ -19,6 +19,38 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .box {
-    background-image: url("photo@2x.png");
+    background-image: url("/images/heroimg/hero_img_480@2x.jpg");
+  }
+}
+.box {
+  width: 768px;
+  height: 400px;
+  background-image: url("/images/heroimg/hero_img_768.jpg");
+  background-size: 768px 400px;
+}
+
+/* Redefine the path to the 2x image
+    if the screen density is at least 2  */
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .box {
+    background-image: url("/images/heroimg/hero_img_768@2x.jpg");
+  }
+}
+.box {
+  width: 1600px;
+  height: 400px;
+  background-image: url("/images/heroimg/hero_img_1200.jpg");
+  background-size: 1600px 600px;
+}
+
+/* Redefine the path to the 2x image
+    if the screen density is at least 2  */
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .box {
+    background-image: url("/images/heroimg/hero_img_1200@2x.jpg");
   }
 }

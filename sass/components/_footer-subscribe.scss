@@ -3,6 +3,11 @@
   text-align: center;
   // flex-wrap: wrap;
   // flex-grow: 1;
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+    flex-wrap: wrap;
+    flex-grow: 1;
+  }
 
   &__title {
     font-style: normal;

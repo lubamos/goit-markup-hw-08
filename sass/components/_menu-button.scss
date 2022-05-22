@@ -6,10 +6,13 @@
   border: none;
   background-color: transparent;
   fill: $text-color;
-
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
   &:hover,
   &:focus {
     fill: $hoverColor;
+    cursor: pointer;
   }
 
   &__icon-cross {
@@ -23,11 +26,7 @@
   //   display: none;
   // }
 }
-@media screen and (min-width: 768px) {
-  menu_button {
-    display: none;
-  }
-}
+
 .is-open .menu-button__icon-cross {
   display: block;
 }

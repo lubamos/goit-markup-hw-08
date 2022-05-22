@@ -1,5 +1,5 @@
 .menu-container {
-  display: none;
+  // display: none;
 
   // display: flex;
   // justify-content: space-between;
@@ -24,7 +24,14 @@
     display: block;
   }
 
-  // @media screen and (max-width: 768px) {
-  //   display: none;
-  // }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
+  }
 }

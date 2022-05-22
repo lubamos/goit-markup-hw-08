@@ -1,7 +1,3 @@
-.ourclients {
-  margin-left: auto;
-  margin-right: auto;
-}
 .section-clients {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -13,11 +9,13 @@
 }
 
 .clients {
+  @extend%ul;
+
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  padding: 0;
-  margin: 15px;
+
+  margin: -15px;
 
   // @media screen and(min-width:768px) {
   //   margin: -15px;

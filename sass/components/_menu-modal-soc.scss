@@ -1,33 +1,38 @@
 .menu-modal-soc {
-  display: flex;
-  text-align: center;
+  @media screen and(max-width: 767px) {
+    display: flex;
+    text-align: center;
 
-  margin-left: 40px;
+    margin-left: 40px;
 
-  list-style: none;
-  text-decoration: none;
+    list-style: none;
+    text-decoration: none;
 
-  &__item {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.22;
+    &__item {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.22;
 
-    letter-spacing: 0.02em;
+      letter-spacing: 0.02em;
 
-    color: $hoverColor;
+      color: $hoverColor;
+    }
+    &__item::after {
+      content: "";
+      background-image: url(/images/smartfon.svg/Line.svg);
+
+      margin: 0 10px;
+      width: 1px;
+      height: 22px;
+
+      border: 1px solid $menuSocLine;
+    }
+    &__item--hidden::after {
+      display: none;
+    }
   }
-  &__item::after {
-    content: "";
-    background-image: url(/images/smartfon.svg/Line.svg);
-
-    margin: 0 10px;
-    width: 1px;
-    height: 22px;
-
-    border: 1px solid $menuSocLine;
-  }
-  &__item--hidden::after {
+  @media screen and(min-width: 768px) {
     display: none;
   }
 }

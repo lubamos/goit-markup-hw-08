@@ -54,3 +54,9 @@
     background-image: url("/images/heroimg/hero_img_1200@2x.jpg");
   }
 }
+@media screen and(min-width: 1200px) {
+  .foot {
+    display: flex;
+    align-items: baseline;
+  }
+}

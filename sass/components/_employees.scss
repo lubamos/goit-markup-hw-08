@@ -26,12 +26,12 @@
       0px 1px 3px rgba(0, 0, 0, 0.12);
 
     @media screen and (min-width: 768px) {
-      width: calc((100%-2 * 15px) / 2);
+      width: calc((100% - 2 * 15px) / 2);
       margin: 15px;
     }
 
     @media screen and (min-width: 1200px) {
-      width: calc((100%-8 * 15px) / 4);
+      width: calc((100% - 8 * 15px) / 4);
       margin: 15px;
     }
     &:not(:last-child) {

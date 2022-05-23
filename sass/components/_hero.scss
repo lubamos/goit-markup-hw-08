@@ -1,19 +1,37 @@
 .hero {
   text-align: center;
-
-  padding-top: 118px;
-  padding-bottom: 118px;
+  @media screen and (max-width: 767px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero-overlay {
   background-image: url("/images/heroimg/hero_img_480.jpg");
-  width: 100%x;
-  height: auto;
+
   margin-left: auto;
   margin-right: auto;
   background-color: $overlayColor;
   background-position: center;
   background-size: cover;
+  @media (max-wdith: 1199px) {
+    width: 100%x;
+    height: auto;
+  }
+  @media screen and (max-width: 767px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1600px;
+  }
 }
 
 @media (min-resolution: 2dppx) {
@@ -34,6 +52,8 @@
 }
 @media (min-wdith: 1200px) {
   .hero-overlay {
+    max-width: 1600px;
+    height: 600px;
     background-image: linear-gradient(
         to right,
         rgba(194, 198, 249, 0.4),
@@ -54,17 +74,26 @@
 
 .hero-overlay__title {
   display: inline-block;
-  text-align: center;
+
   margin-bottom: 30px;
-  width: 360px;
+
   color: $whiteBody;
   font-weight: 900;
-  font-size: 26px;
+
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-}
 
+  @media (max-wdith: 1199px) {
+    text-align: center;
+    width: 360px;
+    font-size: 26px;
+  }
+  @media (min-wdith: 1200px) {
+    width: 696px;
+    font-size: 44px;
+  }
+}
 .hero-overlay__button {
   display: inline-block;
   // cursor: pointer;

@@ -9,6 +9,9 @@
 
   &:nth-last-child(1) {
     margin-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+    }
   }
   &__item {
     margin-bottom: 9px;

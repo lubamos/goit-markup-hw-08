@@ -1,29 +1,35 @@
 .portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
+  text-align: center;
 }
 
 .portfolio-menu {
-  margin-bottom: 50px;
-  list-style: none;
-  text-decoration: none;
+  @extend%ul;
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    width: 450px;
+    flex-wrap: wrap;
+  }
 
   @media screen and (min-width: 768px) {
-    display: flex;
     align-items: center;
     justify-content: center;
+
+    margin-bottom: 50px;
+    width: 768px;
+    // margin: -8px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
   }
 }
 
 .portfolio-menu__item {
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 5 * 8px) / 5);
     margin: 8px;
-  }
-}
-@media screen and (min-width: 768px) {
-  &:last-child {
-    margin-right: 0;
   }
 }
 

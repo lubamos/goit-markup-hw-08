@@ -75,24 +75,28 @@
   display: inline-block;
 
   margin-bottom: 30px;
-
+  // width: 696px;
   color: $whiteBody;
   font-weight: 900;
-
+  // font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
-  @media (max-wdith: 1199px) {
-    text-align: center;
+}
+@media screen and (max-wdith: 1199px) {
+  .hero-overlay__title {
+    // text-align: center;
     width: 360px;
     font-size: 26px;
   }
-  @media (min-wdith: 1200px) {
+}
+@media screen and (min-wdith: 1200px) {
+  .hero-overlay__title {
     width: 696px;
     font-size: 44px;
   }
 }
+
 .hero-overlay__button {
   display: inline-block;
   cursor: pointer;

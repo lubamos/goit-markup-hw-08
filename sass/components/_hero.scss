@@ -18,10 +18,12 @@
   background-color: $overlayColor;
   background-position: center;
   background-size: cover;
-  @media (max-wdith: 1199px) {
-    width: 100%x;
-    height: auto;
-  }
+  width: 100%x;
+  height: auto;
+  // @media (max-width: 1199px) {
+  //   width: 100%x;
+  //   height: auto;
+  // }
   @media screen and (max-width: 767px) {
     width: 480px;
   }
@@ -82,16 +84,13 @@
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-}
-@media screen and (max-wdith: 1199px) {
-  .hero-overlay__title {
-    // text-align: center;
+
+  @media screen and (max-width: 1199px) {
     width: 360px;
     font-size: 26px;
   }
-}
-@media screen and (min-wdith: 1200px) {
-  .hero-overlay__title {
+
+  @media screen and (min-width: 1200px) {
     width: 696px;
     font-size: 44px;
   }

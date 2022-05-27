@@ -559,13 +559,8 @@ body {
   background-color: #c4c4c4;
   background-position: center;
   background-size: cover;
-}
-
-@media (max-wdith: 1199px) {
-  .hero-overlay {
-    width: 100%x;
-    height: auto;
-  }
+  width: 100%x;
+  height: auto;
 }
 
 @media screen and (max-width: 767px) {
@@ -632,14 +627,14 @@ body {
   text-transform: uppercase;
 }
 
-@media screen and (max-wdith: 1199px) {
+@media screen and (max-width: 1199px) {
   .hero-overlay__title {
     width: 360px;
     font-size: 26px;
   }
 }
 
-@media screen and (min-wdith: 1200px) {
+@media screen and (min-width: 1200px) {
   .hero-overlay__title {
     width: 696px;
     font-size: 44px;
